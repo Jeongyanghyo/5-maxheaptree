@@ -151,14 +151,14 @@ void runUserInterface(TreeNode* root) {
             printf("ㅡ");
         }
 		printf("\n");
-        printf(" ㅣ  i : 노드 추가       ㅣ \n");
-        printf(" ㅣ  d : 노드 삭제       ㅣ \n");
+        printf(" ㅣ  i : 노드 추가       ㅣ\n");
+        printf(" ㅣ  d : 노드 삭제       ㅣ\n");
         printf(" ㅣ  p : 레벨별 출력     ㅣ\n");
         printf(" ㅣ  c : 종료            ㅣ\n");
         for (int i = 0; i < 15; i++) {
             printf("ㅡ");
         }
-		printf("\n");
+		printf("\n\n\n\n");
 
         printf("메뉴 입력: ");
         scanf(" %c", &choice);
@@ -169,11 +169,13 @@ void runUserInterface(TreeNode* root) {
             scanf("%d", &value);
             move = InsertMaxHeap(root, value, 1);
             printf("노드 이동 횟수: %d\n", move);
+		printf("\n\n\n\n");
             break;
 
         case 'd':
             move = DeleteMaxHeap(root);
             printf("노드 이동 횟수: %d\n", move);
+		printf("\n\n\n\n");
             break;
 
         case 'p':
